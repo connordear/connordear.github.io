@@ -1,7 +1,16 @@
 body {
   background-color: #34495e;
-  padding: 74px;
-  text-align: 
-  font-family:BrandonGrotesque-Regular, "futura-pt-1","futura-pt-2", Verdana, serif;;
+  font-family: Helvetica, sans-serif;
   color: #FFFFFF
+}
+.content {
+  max-width: 2000px;
+}
+.pictures {
+  width: 100%;
+}
+.name {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
