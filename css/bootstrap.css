@@ -943,6 +943,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+.img-responsive-logo{
+  display: block;
+  max-width: 200px;
+  height: auto;
+}
 .img-rounded {
   border-radius: 6px;
 }
