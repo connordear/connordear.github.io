@@ -20,7 +20,6 @@ body {
 #content {
   max-width: 1746px;
   margin: 0 auto;
-    overflow: scroll;
 }
 #intro {
   height: 1083px;
