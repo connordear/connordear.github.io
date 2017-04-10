@@ -49,6 +49,7 @@ body {
 #right {
   max-width: 50%;
   height: 100%;
+  margin-top: 75px;
   max-height: 982px;
   float: right;
   text-align: center;
@@ -56,6 +57,7 @@ body {
 #header {
   font-size: 20pt;
   font-weight: 100;
+  margin-bottom: 50px;
   /*margin-top: 100px;*/
   text-align: center;
   padding: 5px;
@@ -63,23 +65,17 @@ body {
   text-decoration-color: #ffd57c;
 }
 #text {
+  margin-top: 0px;
   margin: 70px;
   margin-bottom: 0;
   line-height: 20px;
   max-height: 300px;
   overflow: hidden;
 }
-#projects #header {
-  margin-bottom: 75px;
-}
-#projects {
 
-}
 #contact #header{
   margin-bottom: 50px;
   margin-top:200px;
-}
-#contact {
 }
 #services {
   margin-top: 450px;
@@ -164,7 +160,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.1;
+  opacity: 0.3;
   float: left;
   color: white;
   font-size: 12pt;
@@ -187,7 +183,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.1;
+  opacity: 0.3;
   float: left;
   color: white;
   text-shadow: 0px 1px 3px #111;
@@ -210,7 +206,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.1;
+  opacity: 0.3;
   float: left;
   color: white;
   font-size: 12pt;
@@ -233,7 +229,7 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.1;
+  opacity: 0.3;
   float: left;
   color: white;
   text-shadow: 0px 1px 3px #111;
