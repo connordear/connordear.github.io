@@ -20,6 +20,7 @@ body {
 #content {
   max-width: 1746px;
   margin: 0 auto;
+  transition: 0.5s;
 }
 #intro {
   height: 1083px;
@@ -37,9 +38,10 @@ body {
 }
 #sub-head {
   font-weight: 100;
-  font-size: 20pt;
+  font-size: 18pt;
   color:#333;
   text-align: center;
+  transition: 0.5s;
 }
 #about-me {
   margin-bottom: 200px;
@@ -66,24 +68,60 @@ body {
   text-decoration-color: #ffd57c;
 }
 #text {
-  margin-top: 0px;
-  margin: 70px;
+  margin: 50px;
   margin-bottom: 0;
-  line-height: 20px;
+  margin-top: 30px;
   max-height: 300px;
   overflow: hidden;
+  transition: 0.5s;
 }
 
 #contact #header{
   margin-bottom: 50px;
-  margin-top:200px;
-}
-#services {
-  margin-top:350px;
-  padding-top: 100px;
+  margin-top:100px;
 }
 #projects {
   padding-top:100px;
+}
+#services {
+  padding-top: 100px;
+}
+.services-container {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+.services-box {
+  text-align: center;
+  background-color: #111;
+  color: #FFF;
+  font-weight: 200;
+  font-size: 11pt;
+  margin: 1%;
+  border: 1px solid #ffd57c;
+  border-radius: 8px;
+  margin-top: 50px;
+  padding: 1%;
+  max-width: 29%;
+  float: left;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+.services-box #text {
+  color: #666;
+}
+.services-box #sub-head {
+  color: #666;
+}
+.services-box:hover > #text{
+  color: #FFF;
+}
+.services-box:hover {
+  opacity:1;
+}
+.services-box:hover > #sub-head {
+  font-weight: 300;
+  color: #ffd57c;
 }
 #email {
   text-align: center;
