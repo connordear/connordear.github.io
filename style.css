@@ -33,13 +33,19 @@ body {
   font-weight: 100;
   margin: 250px;
   margin-right: 100px;
+  margin-bottom: 0;
   color: #333;
   text-align: center;
 }
 #sub-head {
+  display: block;
   font-weight: 100;
   font-size: 18pt;
   color:#333;
+  float: right;
+  width: 50%;
+  margin-right: 100px;
+  margin-top: 0;
   text-align: center;
   transition: 0.5s;
 }
@@ -68,7 +74,9 @@ body {
   text-decoration-color: #ffd57c;
 }
 #text {
+  display: block;
   margin: 50px;
+  width: 75%;
   margin-bottom: 0;
   margin-top: 30px;
   max-height: 300px;
@@ -109,9 +117,17 @@ body {
 }
 .services-box #text {
   color: #666;
+  margin: 0 auto;
 }
-.services-box #sub-head {
+#services-sub-head {
   color: #666;
+  display: block;
+  font-weight: 100;
+  margin-top: 10px;
+  font-size: 18pt;
+  color:#333;
+  text-align: center;
+  transition: 0.5s;
 }
 .services-box:hover > #text{
   color: #FFF;
@@ -119,7 +135,7 @@ body {
 .services-box:hover {
   opacity:1;
 }
-.services-box:hover > #sub-head {
+.services-box:hover > #services-sub-head {
   font-weight: 300;
   color: #ffd57c;
 }
