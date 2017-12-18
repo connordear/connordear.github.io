@@ -250,19 +250,3 @@ body {
   }
 
 }
-@media (max-width: 800px) {
-  .nav-bar {
-    visibility: hidden;
-  }
-  .about-img {
-    width: 80%;
-  }
-  .project-img-col {
-    flex: 2;
-    width: 100%;
-    transition: 0.5s;
-  }
-  .media-grid {
-    width: 80%;
-  }
-}
