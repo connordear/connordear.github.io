@@ -5,7 +5,9 @@ body {
   color: black;
   font-size: 14pt;
   font-family: "Montserrat", sans-serif;
-  color: #E6E6E6
+  color: #E6E6E6;
+  padding: 0;
+  margin: 0;
 }
 /* Hey! Thanks for checking out my code, I opted to make my own grid
   system cause I heard you could do it in a few lines of code with flexbox.
@@ -13,6 +15,43 @@ body {
   If you're looking at doing a responsive design and need some help
   making your own grid system shoot me a message! connordear@gmail.com
   */
+.nav-grid {
+  flex-direction: row;
+  justify-content:flex-end;
+}
+.nav-bar {
+  margin: 0;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 10;
+  opacity: 0.8;
+}
+.nav-img {
+  max-width: 100px;
+  margin: 10px;
+  display: inline-block;
+  float: left;
+}
+.nav-link {
+  text-decoration: none;
+  float: left;
+  opacity: 0.7;
+  margin-left: 10px;
+}
+.nav-link:hover {
+  text-decoration: line-through;
+  text-decoration-color: #FFDA00;
+  opacity: 1;
+}
+.nav-title {
+  margin: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-weight: 300;
+  text-align: right;
+  color: black;
+}
 .grid {
   display: flex;
   transition: 0.5s;
@@ -203,6 +242,9 @@ body {
   }
   .media-grid > .col {
     margin: 10px;
+  }
+  .nav-bar {
+    visibility: hidden;
   }
 }
 @media (max-width: 800px) {

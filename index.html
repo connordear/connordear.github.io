@@ -6,8 +6,33 @@
   <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1" />
   <title>Connor Dear</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/icons/icon.ico" type="image/gif" sizes="16x16">
 </head>
-
+<!-- Nav Bar -->
+<header>
+  <div class="nav-bar">
+    <div class="nav-grid">
+      <!-- <div>
+        <a href="#"><img class="nav-img" src="./assets/nav-icon.png" alt=""></a>
+      </div> -->
+      <div>
+        <a class="nav-link" href="#about"><h4 class="nav-title">ABOUT ME</h4></a>
+      </div>
+      <div>
+        <a class="nav-link" href="#dev"><h4 class="nav-title">DEVELOPMENT</h4></a>
+      </div>
+      <!-- <div>
+        <a class="nav-link" href="#schedule-faq"><h4 class="nav-title">DESIGN</h4></a>
+      </div>
+      <div>
+        <a class="nav-link" href="#schedule-faq"><h4 class="nav-title">ENGINEERING</h4></a>
+      </div> -->
+      <div>
+        <a class="nav-link" href="#contact"><h4 class="nav-title">CONTACT ME</h4></a>
+      </div>
+    </div>
+  </div>
+</header>
 <body>
   <!-- Title Section -->
   <div class="grid center full-screen title-grid">
@@ -40,7 +65,7 @@
     </div>
   </div>
   <!-- About Section -->
-  <div class="grid center about-grid">
+  <div class="grid center about-grid"  id="about">
     <div class="col">
       <div class="grid center">
         <div class="col center">
@@ -60,11 +85,12 @@
     </div>
   </div>
   <!-- Projects Section -->
-  <div class="grid center projects-section">
+  <div class="grid center projects-section" id="dev">
     <div class="col">
-      <h2 class="heading"> Development</h2>
+      <h2 class="heading">Development</h2>
       <div class="yellow-highlight dev-yel">
       </div>
+      <!-- Pillflower World Info -->
       <div class="grid center project-cont">
         <div class="col project-img-col">
           <img src="./assets/images/pillflower-pic.jpg" class="project-img" alt="">
@@ -87,6 +113,7 @@
             grid system and Scrollspy navigation.</p>
         </div>
       </div>
+      <!-- ElleHacks Info -->
       <div class="grid center project-cont">
         <div class="col project-img-col">
           <img src="./assets/images/elle-hacks-pic.jpg" class="project-img" alt="">
@@ -150,7 +177,7 @@
     </div>
   </div>
   <!-- Contact Info -->
-  <div class="grid center contact-grid">
+  <div class="grid center contact-grid" id="contact">
     <div class="col">
       <h2 class="heading">Contact Me</h2>
       <div class="yellow-highlight contact-yel"></div>
