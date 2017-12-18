@@ -1,320 +1,202 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400|Playfair+Display:700,900');
+
 body {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url("bg-mountain.jpg");
-  max-width: 100%;
-  background-position: center top;
-  background-size: auto;
-  background-repeat: no-repeat;
+  background-color: #1A1A1A;
+  color: black;
+  font-size: 14pt;
+  font-family: "Montserrat", sans-serif;
+  color: #E6E6E6
 }
-.nav-bar {
-  font-weight: 200;
-  letter-spacing: 1px;
-  z-index: 99;
-}
-.nav-bar li{
-  color: #ffd57c;
-}
-#content {
-  max-width: 1746px;
-  margin: 0 auto;
+/* Hey! Thanks for checking out my code, I opted to make my own grid
+  system cause I heard you could do it in a few lines of code with flexbox.
+
+  If you're looking at doing a responsive design and need some help
+  making your own grid system shoot me a message! connordear@gmail.com
+  */
+.grid {
+  display: flex;
   transition: 0.5s;
 }
-#intro {
-  height: 1083px;
-  margin-bottom: 200px;
+.col {
+  flex: 1;
 }
-#name {
-  float: right;
-  width: 50%;
-  font-size: 50pt;
-  font-weight: 100;
-  margin: 250px;
-  margin-right: 100px;
-  margin-bottom: 0;
-  color: #333;
-  text-align: center;
+.flex-2 {
+  flex: 2;
 }
-#sub-head {
-  display: block;
-  font-weight: 100;
-  font-size: 18pt;
-  color:#333;
-  float: right;
-  width: 50%;
-  margin-right: 100px;
-  margin-top: 0;
-  text-align: center;
-  transition: 0.5s;
-}
-#about-me {
-  margin-bottom: 200px;
-}
-#left img{
-  max-width: 50%;
-}
-#right {
-  max-width: 50%;
-  height: 100%;
-  margin-top: 75px;
-  max-height: 982px;
-  float: right;
-  text-align: center;
-}
-#header {
-  font-size: 20pt;
-  font-weight: 100;
-  margin-bottom: 50px;
-  /*margin-top: 100px;*/
-  text-align: center;
-  padding: 5px;
-  text-decoration: underline;
-  text-decoration-color: #ffd57c;
-}
-#text {
-  display: block;
-  margin: 50px;
-  width: 75%;
-  margin-bottom: 0;
-  margin-top: 30px;
-  max-height: 300px;
-  overflow: hidden;
-  transition: 0.5s;
+.center {
+  align-items: center;
+  justify-content: center;
 }
 
-#contact #header{
-  margin-bottom: 50px;
-  margin-top:100px;
-}
-#projects {
-  padding-top:100px;
-}
-#services {
-  padding-top: 100px;
-}
-.services-container {
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 90%;
-}
-.services-box {
-  text-align: center;
-  background-color: #111;
-  color: #FFF;
-  font-weight: 200;
-  font-size: 11pt;
-  margin: 1%;
-  border: 1px solid #ffd57c;
-  border-radius: 8px;
-  margin-top: 50px;
-  padding: 1%;
-  max-width: 29%;
-  float: left;
-  opacity: 0.6;
-  transition: 0.5s;
-}
-.services-box #text {
-  color: #666;
+.yellow-highlight-title {
+  background-color: #FFDA00;
+  height: 2em;
+  max-width: 12em;
   margin: 0 auto;
+  transform: translateY(-2em);
+  opacity: 0.95;
 }
-#services-sub-head {
-  color: #666;
-  display: block;
-  font-weight: 100;
-  margin-top: 10px;
-  font-size: 18pt;
-  color:#333;
-  text-align: center;
-  transition: 0.5s;
+
+.yellow-highlight {
+  background-color: #FFDA00;
+  height: 1em;
+  width: 0;
+  margin: 0 auto;
+  transform: translateY(-2.5em);
+  opacity: 0.95;
 }
-.services-box:hover > #text{
-  color: #FFF;
+.design-yel {
+  width: 8em;
 }
-.services-box:hover {
-  opacity:1;
+.dev-yel {
+  width: 16em;
 }
-.services-box:hover > #services-sub-head {
-  font-weight: 300;
-  color: #ffd57c;
+.eng-yel {
+  width: 15em;
 }
-#email {
-  text-align: center;
-  margin: 25px;
+.art-yel {
+  width: 5em;
 }
-#email a{
-  color: #333;
+.about-yel {
+  width: 11em;
 }
-.button {
-  margin-top: 70px;
+.full-screen {
+  height: 100vh;
+}
+.contact-yel {
+  width: 15em;
+}
+.title {
   color: white;
-  background-color: #777;
-  padding: 25px;
   text-align: center;
-  transition: 0.5s
+  font-family: "Playfair Display", serif;
+  font-size: 4em;
+  font-weight: 900;
+  margin-bottom: 0;
 }
-.button:hover {
-  background-color: #000;
+
+.about-grid {
+  margin-bottom: 50px;
 }
-.social-media {
-  max-width: 500px;
-  margin: 0 auto;
-}
-.social-media img{
-  max-width: 70px;
-  margin: 25.5px;
-  margin-top: 25px;
-  opacity: 0.2;
-  transition: 0.5s;
-}
-.social-media img:hover{
-  opacity: 1;
-}
-.round-img {
-  max-width: 400px;
-  margin: 0 auto;
-}
-.round-img img{
+.about-img {
+  width: 50%;
   border-radius: 100%;
-  max-width: 100%;
-  transition: 0.5s;
-}
-.round-img img:hover{
-  border-radius: 5%;
-}
-
-ul {
-  position: fixed;
-  width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 10px;
-  background-color: #333;
-  text-align: center;
-  overflow:hidden;
-  box-shadow: 0px 4px 20px grey;
-  opacity: 0.8;
-}
-li {
-  display: inline;
-  color: white;
-  padding: 50px;
-  transition: 0.5s;
-}
-li:hover {
-  background-color: #111;
-}
-li a{
-  text-decoration: none;
-}
-p {
-  text-align: center;
-}
-.four-container {
   display: block;
-  width: 100%;
-  float: left;
-  margin-bottom: 75px;
-}
-.cont1 {
-  background-image: url("fourpic/marta.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.7;
-  float: left;
-  color: white;
-  font-size: 12pt;
-  text-align: center;
-  text-shadow: 0px 1px 3px #111;
-  width: 25%;
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  border: 0px;
+  margin: 0 auto;
   transition: 0.5s;
-  z-index: 1;
 }
-.cont1:hover {
-  opacity: 1;
-  color: #ffd57c;
-}
-.cont2 {
-  background-image: url("fourpic/joelcamp.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.7;
-  float: left;
+.about-grid > .col > .grid > .right-text > .heading {
   color: white;
-  text-shadow: 0px 1px 3px #111;
-  font-size: 12pt;
-  text-align: center;
-  width: 25%;
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  border: 0px;
-  transition: 0.5s;
-  z-index: 1;
 }
-.cont2:hover {
-  opacity: 1;
-  color: #ffd57c;
-}
-.cont3 {
-  background-image: url("fourpic/canoe.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.7;
-  float: left;
+.contact-grid > .col > .heading {
   color: white;
-  font-size: 12pt;
-  text-shadow: 0px 1px 3px #111;
-  text-align: center;
-  width: 25%;
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  border: 0px;
+}
+.about-img:hover {
+  border-radius: 0;
   transition: 0.5s;
-  z-index: 1;
 }
-.cont3:hover {
-  opacity: 1;
-  color: #ffd57c;
+.about-text {
+  margin: 40px;
+  margin-top: 10px;
+  font-weight: 100;
 }
-.cont4 {
-  background-image: url("fourpic/lucy.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.7;
-  float: left;
-  color: white;
-  text-shadow: 0px 1px 3px #111;
-  font-size: 12pt;
+.sub-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: #E6E6E6;
+  font-weight: 100;
   text-align: center;
-  width: 25%;
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  border: 0px;
-  transition: 0.5s;
-  z-index: 1;
-}
-.cont4:hover {
-  opacity: 1;
-  color: #ffd57c;
+  text-transform: uppercase;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.projects-section {
+  background-color: white;
+  color: #1A1A1A;
 }
-a:visited {
-  color: inherit;
-  text-decoration: none;
+.project-cont {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.project-img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+.project-title {
+  text-align: left;
+  color: #1A1A1A;
+  font-weight: 400;
+}
+.project-link-right {
+  text-transform: lowercase;
+}
+.text {
+  font-weight: 100;
+}
+.heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+.project-cont.project-left > .project-img-col {
+  order: 2;
+}
+.project-cont.project-left > .col > .project-title, .project-left > .col > .text{
+  text-align: right;
+}
+.media-grid {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.media-img {
+  width: 75px;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 550px) {
+  .grid {
+    flex-direction: column;
+    transition: 0.5s;
+  }
+  .title-grid {
+    transform: translateY(25%);
+    margin-bottom: 50px;
+  }
+  .about-grid {
+    height: auto;
+  }
+  .project-cont.project-left > .project-img-col {
+    order: 0;
+  }
+  .project-cont.project-left > .col > .text{
+    text-align: left;
+  }
+  .project-cont.project-left > .col > .project-title {
+    text-align: center;
+  }
+  .project-cont > .col > .project-title {
+    text-align: center;
+  }
+  .media-grid > .col {
+    margin: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .about-img {
+    width: 80%;
+  }
+  .project-img-col {
+    flex: 2;
+    width: 100%;
+    transition: 0.5s;
+  }
+  .media-grid {
+    width: 80%;
+  }
 }

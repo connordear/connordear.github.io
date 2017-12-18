@@ -2,130 +2,168 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Connor Dear | Software Developer</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width; maximum-scale=1; minimum-scale=1;" />
+    <title>Connor Dear</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <header>
-    <ul class="nav-bar">
-      <a href="#about-me"><li>ABOUT CONNOR</li></a><a href="#projects"><li>PROJECTS</li></a><a href="#services"><li>SERVICES</li></a><a href="#contact"><li>CONTACT</li></a>
-    </ul>
-    </header>
-    <main>
-    <div id="content">
-      <div id="intro">
-        <h1 id="name">
-        CONNOR DEAR
-        </h1>
-        <h3 id="sub-head">
-          SOFTWARE DEVELOPER
-        </h3>
-      </div>
-      <div id="about-me">
-        <div id="right">
-            <h2 id="header">
-              ABOUT CONNOR
-            </h2>
-            <p id="text">
-              Born and raised in Edmonton, Alberta, Connor’s formative years inolved trips to Europe, winter camping adventures in the alpines, and banging out some new tunes with the band.
-              Currently Connor can be found completing his Software Engineering degree at the Lassonde School of Engineering in Toronto, Ontario Canada. Always down to grab a beer, catch up with an old friend, or take on a new freelance gig, be sure to get in contact with Connor if you have any questions!
-            </p>
+    <!-- Title Section -->
+    <div class="grid center full-screen title-grid">
+      <div class="col">
+        <div class="grid center">
+          <div class="col">
 
-        </div>
-        <div id="left">
-          <img src="shadow.jpg" alt="">
-        </div>
-        </div>
-
-        <div id="projects">
-          <h2 id="header">
-            PROJECTS
-          </h2>
-          <div class="four-container">
-            <a href="https://www.youtube.com/watch?v=RJurKWRHJrI&feature=youtu.be">
-              <div class="cont1">
-                MAGIC MIRROR
-              </div>
-            </a>
-            <a href="https://github.com/connordear/projecteuler_problems">
-              <div class="cont2">
-                PROJECT EULER
-              </div>
-            </a>
-            <a href="https://www.flickr.com/photos/cobbs_togs/">
-              <div class="cont3">
-                PHOTOGRAPHY
-              </div>
-            </a>
-            <a href="http://lassat.ca">
-              <div class="cont4">
-                CUBESAT
-              </div>
-            </a>
           </div>
-          <div style="clear: both" />
+          <div class="col">
+            <h1 class="title">DEAR</h1>
+            <div class="yellow-highlight-title">
+
+            </div>
+          </div>
+          <div class="col">
+
+          </div>
+        </div>
+        <div class="grid">
+          <div class="col">
+            <h3 class="sub-header">Design</h3>
+          </div>
+          <div class="col">
+            <h3 class="sub-header">Engineering</h3>
+          </div>
+          <div class="col">
+            <h3 class="sub-header">Arts</h3>
+          </div>
         </div>
       </div>
-        <div id="services">
-          <div id="header">
-            Work History
-          </div>
-          <a href="resume.pdf">
-            <div class="button">
-                MY RESUME
-            </div>
-          </a>
-          <!-- <div class="services-container">
-            <div class="services-box">
-              <h3 id="services-sub-head">
-                WEB DESIGN
-              </h3>
-              <p id="text">
-                Freelance web designer/developer; open to taking on whatever web ventures you're interesting in doing. Want to finally get that portfolio on your domain that you bought last year?
-              </p>
-            </div>
-            <div class="services-box">
-              <h3 id="services-sub-head">
-                APP DEVELOPMENT
-              </h3>
-              <p id="text">
-                Need to get that custom mobile app you've been dreaming of off the ground? I'm always up to take on some new projects, shoot me an email and let's get it rolling.
-              </p>
-            </div>
-            <div class="services-box">
-              <h3 id="services-sub-head">
-                EMBEDDED SYSTEMS
-              </h3>
-              <p id="text">
-                Whether a magnetorquer winding stations, magic mirrors, or whatever else your heart desires, I love working through the design/build process for these kind of projects. Hit me up.
-              </p>
-            </div>
-            <div style="clear: both" />
-          </div>
-          </div> -->
-        </div>
-        <div id="contact">
-          <div id="header">
-            CONTACT
-          </div>
-          <div class="round-img">
-            <img src="connor500px.png" alt="">
-          </div>
-          <div id="email">
-            <a href="mailto:connordear@gmail.com">connordear@gmail.com</a>
-          </div>
-          <div class="social-media">
-            <a href="https://www.facebook.com/connor.dear"><img src="icons/fb.svg" alt=""></a>
-            <a href="https://github.com/connordear"><img src="icons/github.svg" alt=""></a>
-            <a href="https://www.instagram.com/connor_dear/"><img src="icons/ig.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/connordear"><img src="icons/linkedin.svg" alt=""></a>
-          </div>
-        </div>
-
-
     </div>
-    </main>
+    <!-- About Section -->
+    <div class="grid full-screen center about-grid">
+      <div class="col">
+        <div class="grid center">
+          <div class="col center">
+            <img src="./assets/connor-img.jpg" class="about-img" alt="">
+          </div>
+          <div class="col right-text">
+            <h2 class="heading">About Me</h2>
+            <div class="yellow-highlight about-yel">
+
+            </div>
+            <p class="about-text">
+              Connor currently resides in Toronto, Canada, working on a Software Engineering degree at the Lassonde School of Engineering.
+              <br><br>
+              Connor spends his free time completing freelance design/development jobs, meeting new people, hiking into canadian wilderness, and hunting down the best watering holes in the city.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects Section -->
+    <div class="grid center projects-section">
+      <div class="col">
+        <h2 class="heading"> Development</h2>
+        <div class="yellow-highlight dev-yel">
+
+          </div>
+        <div class="grid center project-cont">
+          <div class="col project-img-col">
+            <img src="./assets/pillflower-pic.jpg" class="project-img" alt="">
+          </div>
+          <div class="col flex-2">
+            <h3 class="sub-header project-title">Pillflower World //  <a href="https://appetize.io/app/k1p3azx2hb09waacwe843mgctw?device=ipadair&scale=50&orientation=portrait&osVersion=11.1">The App</a></h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <!-- House of Sewl Info -->
+        <div class="grid center project-cont project-left">
+          <div class="col project-img-col">
+            <img src="./assets/sewl-pic.jpg" class="project-img" alt="">
+          </div>
+          <div class="col flex-2">
+            <h3 class="sub-header project-title">House of Sewl // <a href="http://sewl.ca/" class="project-link">sewl.ca</a></h3>
+            <p class="text">Sewl is a Toronto startup that seeks to continually empower their customers by meeting their individual fashion needs through an interactive shopping experience. I met Ashley, the CEO, while taking part in the YULaunch Accelerator program in the summer of 2017. She was looking for someone to design/develop the site - as a big fan of the idea for her company, I was eager to help her out with it. Making use of Bootstrap's form validation, as well as a handy google-apps script to handle email sign-ups, the page submits all form data to a google sheets document. I found this to be a handy work around to help save a bit of cash handling form submissions. The site is fully responsive and also makes use of Bootstrap's grid system and Scrollspy navigation.</p>
+          </div>
+        </div>
+        <div class="grid center project-cont">
+          <div class="col project-img-col">
+            <img src="./assets/elle-hacks-pic.jpg" class="project-img" alt="">
+          </div>
+          <div class="col flex-2">
+            <h3 class="sub-header project-title">Elle Hacks // <a href="http://ellehacks.com/" >ellehacks.com</a></h3>
+            <h4></h4>
+            <p class="text">ElleHacks is a women-only hackathon that takes place in the Lassonde School of Engineering. My friend Ramona Sar is the president of the WISE (Women in Science and Engineering) club at Lassonde, and asked if I would be able to build the site out for her! I love this initiative to help encourage diversity in STEM fields, and worked with a designer (Leena Chanthyvong) to build out the site. This time around I decided to build my own grid system using pure HTML/CSS (using flexbox), and was thrilled at how easy it was! This project taught me a lot about the impact that loading JS bytes can have on the load time for a site, and I was inspired to re-do my webpage with a similar custom grid system. </p>
+          </div>
+        </div>
+        <!-- <h2 class="heading">Design</h2>
+        <div class="yellow-highlight design-yel">
+
+          </div>
+        <div class="grid center project-cont project-left">
+          <div class="col project-img-col">
+            <img src="./assets/connor-img.jpg" class="project-img" alt="">
+          </div>
+          <div class="col flex-2">
+            <h3 class="sub-header project-title">PiDAQ</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <h2 class="heading">Engineering</h2>
+        <div class="yellow-highlight eng-yel">
+
+          </div>
+        <div class="grid center project-cont project-left">
+          <div class="col project-img-col">
+            <img src="./assets/connor-img.jpg" class="project-img" alt="">
+          </div>
+          <div class="col flex-2">
+            <h3 class="sub-header project-title">Coil Winder</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <h2 class="heading">Art</h2>
+        <div class="yellow-highlight art-yel">
+
+          </div>
+        <div class="grid center project-cont">
+          <div class="col project-img-col">
+            <img src="./assets/connor-img.jpg" class="project-img" alt="">
+          </div>
+          <div class="col flex-2">
+            <h3 class="sub-header project-title">Pillflower World</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div class="grid center project-cont project-left">
+          <div class="col project-img-col">
+            <img src="./assets/connor-img.jpg" class="project-img" alt="">
+          </div>
+          <div class="col flex-2">
+            <h3 class="sub-header project-title">Pillflower World</h3>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- Contact Info -->
+    <div class="grid center contact-grid">
+      <div class="col">
+        <h2 class="heading">Contact Me</h2>
+        <div class="yellow-highlight contact-yel"></div>
+        <div class="grid media-grid">
+          <div class="col">
+            <img class="media-img" src="./assets/sewl-pic.jpg" alt="">
+          </div>
+          <div class="col">
+            <img class="media-img" src="./assets/sewl-pic.jpg" alt="">
+          </div>
+          <div class="col">
+            <img class="media-img" src="./assets/sewl-pic.jpg" alt="">
+          </div>
+          <div class="col">
+            <img class="media-img" src="./assets/sewl-pic.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
