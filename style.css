@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,400|Playfair+Display:700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400|Playfair+Display:700,900');
 
 body {
   background-color: #1A1A1A;
@@ -76,7 +76,7 @@ body {
 }
 
 .about-grid {
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 .about-img {
   width: 50%;
@@ -112,11 +112,19 @@ body {
 .projects-section {
   background-color: white;
   color: #1A1A1A;
+  padding-top: 50px;
 }
 .project-cont {
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 50px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.project-cont:hover {
+  /* Alright this box shadow is from w3 but they nailed it.*/
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
 }
 .project-img {
   width: 80%;
@@ -133,7 +141,7 @@ body {
   text-transform: lowercase;
 }
 .text {
-  font-weight: 100;
+  font-weight: 300;
 }
 .heading {
   font-family: "Playfair Display", serif;
@@ -155,9 +163,19 @@ body {
   margin-bottom: 50px;
 }
 .media-img {
-  width: 75px;
+  max-width: 75px;
   display: block;
   margin: 0 auto;
+  padding: 7px;
+
+  opacity: 0.5;
+  transition: 0.5s;
+}
+.media-img:hover {
+  opacity: 1;
+  border: 1px solid #FFDA00;
+  border-radius: 100%;
+  transition: 0.5s;
 }
 @media (max-width: 550px) {
   .grid {
