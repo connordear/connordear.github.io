@@ -28,8 +28,9 @@ body {
   opacity: 0.8;
 }
 .nav-img {
-  max-width: 100px;
+  max-height: 1em;
   margin: 10px;
+  margin-left: 30px;
   display: inline-block;
   float: left;
 }
@@ -115,7 +116,7 @@ body {
 }
 
 .about-grid {
-  margin-bottom: 200px;
+
 }
 .about-img {
   width: 50%;
@@ -205,16 +206,20 @@ body {
   max-width: 75px;
   display: block;
   margin: 0 auto;
-  padding: 7px;
-
+  padding: 8px;
   opacity: 0.5;
   transition: 0.5s;
 }
 .media-img:hover {
   opacity: 1;
+  padding: 7px;
   border: 1px solid #FFDA00;
   border-radius: 100%;
   transition: 0.5s;
+}
+.footer-style {
+  text-align: center;
+  margin: 10px;
 }
 @media (max-width: 550px) {
   .grid {
@@ -243,11 +248,12 @@ body {
   .media-grid > .col {
     margin: 10px;
   }
+
+}
+@media (max-width: 800px) {
   .nav-bar {
     visibility: hidden;
   }
-}
-@media (max-width: 800px) {
   .about-img {
     width: 80%;
   }
