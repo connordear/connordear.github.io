@@ -282,7 +282,7 @@ body {
 .down-arrow{
   display: block;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 160px;
 }
 .arrow-bounce {
 	-moz-animation: arrow-bounce 3s infinite;
