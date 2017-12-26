@@ -67,6 +67,10 @@ body {
   align-items: center;
   justify-content: center;
 }
+.title-col {
+  /* visibility: hidden; */
+}
+
 
 .yellow-highlight-title {
   background-color: #FFDA00;
@@ -116,7 +120,8 @@ body {
 }
 
 .about-grid {
-
+  /* transform: translateX(-9999px); */
+  position: relative;
 }
 .about-img {
   width: 50%;
@@ -191,6 +196,9 @@ body {
   text-align: center;
   color: black;
 }
+.heading-space {
+  padding-top: 60px;
+}
 .project-cont.project-left > .project-img-col {
   order: 2;
 }
@@ -248,12 +256,11 @@ body {
   .media-grid > .col {
     margin: 10px;
   }
-
-}
-@media (max-width: 800px) {
-  .nav-bar {
+  .down-arrow {
     visibility: hidden;
   }
+}
+@media (max-width: 800px) {
   .about-img {
     width: 80%;
   }
@@ -264,5 +271,69 @@ body {
   }
   .media-grid {
     width: 80%;
+  }
+}
+@media (max-width: 880px) {
+  .nav-bar {
+    visibility: hidden;
+  }
+}
+
+.down-arrow{
+  display: block;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.arrow-bounce {
+	-moz-animation: arrow-bounce 3s infinite;
+	-webkit-animation: arrow-bounce 3s infinite;
+	animation: arrow-bounce 3s infinite;
+}
+@-moz-keyframes arrow-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes arrow-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes arrow-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }

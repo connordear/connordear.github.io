@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1" />
   <title>Connor Dear</title>
+  <!-- <script src="./javascript/jquery-3.2.1.min.js"></script> -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/animations.css">
   <link rel="icon" href="./assets/icons/icon.ico" type="image/gif" sizes="16x16">
 </head>
 <!-- Nav Bar -->
@@ -21,12 +23,12 @@
       <div>
         <a class="nav-link" href="#dev"><h4 class="nav-title">DEVELOPMENT</h4></a>
       </div>
-      <!-- <div>
-        <a class="nav-link" href="#schedule-faq"><h4 class="nav-title">DESIGN</h4></a>
+      <div>
+        <a class="nav-link" href="#design"><h4 class="nav-title">DESIGN</h4></a>
       </div>
       <div>
-        <a class="nav-link" href="#schedule-faq"><h4 class="nav-title">ENGINEERING</h4></a>
-      </div> -->
+        <a class="nav-link" href="#eng"><h4 class="nav-title">ENGINEERING</h4></a>
+      </div>
       <div>
         <a class="nav-link" href="#contact"><h4 class="nav-title">CONTACT ME</h4></a>
       </div>
@@ -41,7 +43,7 @@
         <div class="col">
 
         </div>
-        <div class="col">
+        <div class="col title-col bounce">
           <h1 class="title">DEAR</h1>
           <div class="yellow-highlight-title">
 
@@ -53,13 +55,22 @@
       </div>
       <div class="grid">
         <div class="col">
-          <h3 class="sub-header">Design</h3>
-        </div>
-        <div class="col">
           <h3 class="sub-header">Engineering</h3>
         </div>
         <div class="col">
-          <h3 class="sub-header">Arts</h3>
+          <h3 class="sub-header">Design</h3>
+        </div>
+        <div class="col">
+          <h3 class="sub-header">Development</h3>
+        </div>
+      </div>
+      <div class="grid center">
+        <div class="col">
+          <a href="#about">
+            <div class="arrow-bounce">
+              <img class="down-arrow" width="40" height="40" alt="" src="data:image/svg+xml;base64,PHN2ZyBpZD0i0KHQu9C+0LlfMSIgZGF0YS1uYW1lPSLQodC70L7QuSAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMC4wMiAxMS4wMiI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjx0aXRsZT5kb3dubG9hZDwvdGl0bGU+PHBhdGggaWQ9IkV4cGFuZF9Nb3JlIiBkYXRhLW5hbWU9IkV4cGFuZCBNb3JlIiBjbGFzcz0iY2xzLTEiIGQ9Ik0yNC4yOCwxMS4yOCwxNiwxOS41Nyw3LjcyLDExLjI4YTEsMSwwLDAsMC0xLjQzLDAsMSwxLDAsMCwwLDAsMS40M2w5LDloMGExLDEsMCwwLDAsMS40MywwbDktOWExLDEsMCwwLDAsMC0xLjQzQTEsMSwwLDAsMCwyNC4yOCwxMS4yOFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01Ljk5IC0xMC45OSkiLz48L3N2Zz4="/>
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -96,7 +107,7 @@
           <img src="./assets/images/pillflower-pic.jpg" class="project-img" alt="">
         </div>
         <div class="col flex-2">
-          <h3 class="sub-header project-title">Pillflower World //  <a href="https://appetize.io/app/k1p3azx2hb09waacwe843mgctw?device=ipadair&scale=50&orientation=portrait&osVersion=11.1">The App (Slightly buggy on appetize)</a></h3>
+          <h3 class="sub-header project-title">Pillflower World //  <a href="https://appetize.io/app/k1p3azx2hb09waacwe843mgctw?device=ipadair&scale=50&orientation=portrait&osVersion=11.1">The App</a></h3>
           <p class="text">The first freelance gig that I worked on, Pillflower World, is the next stage of Artist <a href="http://www.lynneheller.com/">Lynne Heller's</a> continued work with exploring her Pillflowers. I met Lynne while working in the prototyping lab at school as she was 3D printing one of her Pillflowers, and with her designs & art, my friend Ken Faria and I developed her app using React-Native. It was developed specifically for iPad, and as a result of the very tight timeline, it is not cross-compatible across devices. Still, it was a great project to work on, and I had a learned a tonne along the way. Shout out to React-Native -- shit's good.</p>
         </div>
       </div>
@@ -126,6 +137,32 @@
             and was thrilled at how easy it was! This project taught me a lot about the impact that loading JS bytes can have on the load time for a site, and I was inspired to re-do my webpage with a similar custom grid system. </p>
         </div>
       </div>
+      <!-- Design -->
+      <h2 class="heading heading-space" id="design">Design</h2>
+      <div class="yellow-highlight design-yel"></div>
+      <div class="grid center project-cont project-left">
+        <div class="col project-img-col">
+          <img src="./assets/images/pidaq-pic.jpg" class="project-img" alt="">
+        </div>
+        <div class="col flex-2">
+          <h3 class="sub-header project-title">PiDAQ // <a href="http://roboteurs.com/" >Roboteurs.ca</a></h3>
+          <h4></h4>
+          <p class="text">PiDAQ was a design & development project that I did with my friend Ken again. We designed a user interface where users can input settings that they wish to send to certain pins, or configure other pins to read certain types of data. We are in the development process currently using React with a Node.js server to read/write to the actual hardware.  </p>
+        </div>
+      </div>
+      <!-- Engineering -->
+      <h2 class="heading heading-space" id="eng">Engineering</h2>
+      <div class="yellow-highlight eng-yel"></div>
+      <div class="grid center project-cont">
+        <div class="col project-img-col">
+          <img src="./assets/images/mag-pic.jpg" class="project-img" alt="">
+        </div>
+        <div class="col flex-2">
+          <h3 class="sub-header project-title">Magnetorquer Winding Station // <a href="https://cad.onshape.com/documents/632dfd44de458030aa2f17de/w/ac9f1e79fea28aa8dafa7ac3/e/e65fb08ea6260297d465aa07" >The Model (requires account)</a></h3>
+          <h4></h4>
+          <p class="text">Having spent a lot of time in the rapid-prototyping lab at Lassonde, I've had the chance to work on several mechanical engineering projects as well. The Canadian Satellite Design Club at York was looking for a way to build custom Magnetorquers, essentially finely wrapped wire around a metal core. The station uses a Raspberry Pi to drive two different stepper motors to guide the wire along the core. It was constructed using 3D printed ABS and has an acryllic base. </p>
+        </div>
+      </div>
     </div>
   </div>
   <!-- Contact Info -->
@@ -149,7 +186,10 @@
       </div>
     </div>
   </div>
+  <!-- <script type="text/javascript" src="./javascript/script.js"></script> -->
 </body>
-<footer class="footer-style">Coded by Connor, last update December 17th 2017.</footer>
+<footer class="footer-style">Coded by Connor, last update December 26th 2017.</footer>
+
+
 
 </html>
