@@ -254,12 +254,12 @@ body {
     flex-direction: column;
     transition: 0.5s;
   }
-  .title-grid {
-    /* transform: translateY(25%);
-    margin-bottom: 50px; */
+  .title-grid > .col > .grid > .col {
+    margin-top: 50px;
   }
   .about-grid {
     height: auto;
+    padding-top: 50px;
   }
   .project-cont.project-left > .project-img-col {
     order: 0;
