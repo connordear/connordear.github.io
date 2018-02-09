@@ -91,6 +91,15 @@ body {
   }
 }
 
+@keyframes sub-header-flux {
+  0% {
+    color: white
+  }
+  100% {
+    color: #A9A9A9
+  }
+}
+
 .yellow-highlight-title {
   background-color: #FFDA00;
   height: 2em;
@@ -172,6 +181,7 @@ body {
   font-weight: 100;
   text-align: center;
   text-transform: uppercase;
+  animation: sub-header-flux 4s alternate infinite;
 }
 
 .projects-section {
