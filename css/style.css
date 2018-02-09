@@ -70,7 +70,26 @@ body {
 .title-col {
   /* visibility: hidden; */
 }
+.title-grid {
+  animation: title-grid-flux 4s alternate infinite;
+}
+@keyframes title-grid-flux {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+}
 
+@keyframes title-flux {
+  0% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
 
 .yellow-highlight-title {
   background-color: #FFDA00;
@@ -78,7 +97,7 @@ body {
   max-width: 12em;
   margin: 0 auto;
   transform: translateY(-2em);
-  opacity: 0.95;
+  opacity: 0.8;
 }
 
 .yellow-highlight {
@@ -87,7 +106,7 @@ body {
   width: 0;
   margin: 0 auto;
   transform: translateY(-2.5em);
-  opacity: 0.95;
+  opacity: 0.8;
 }
 .design-yel {
   width: 8em;
@@ -111,6 +130,7 @@ body {
   width: 15em;
 }
 .title {
+  animation: title-flux 4s alternate infinite;
   color: white;
   text-align: center;
   font-family: "Playfair Display", serif;
@@ -235,8 +255,8 @@ body {
     transition: 0.5s;
   }
   .title-grid {
-    transform: translateY(25%);
-    margin-bottom: 50px;
+    /* transform: translateY(25%);
+    margin-bottom: 50px; */
   }
   .about-grid {
     height: auto;
