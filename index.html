@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131795857-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-131795857-1');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1" />
   <title>Connor Dear</title>
@@ -44,9 +53,13 @@
 
         </div>
         <div class="col title-col">
-          <h1 class="title">DEAR</h1>
-          <div class="yellow-highlight-title">
+          <div class="title-wrap">
+            <h1 class="title">Connor Dear</h1>
+          </div>
+          <div class="wrapper-z">
+            <div class="yellow-highlight-title">
 
+            </div>
           </div>
         </div>
         <div class="col">
@@ -101,6 +114,19 @@
       <h2 class="heading">Development</h2>
       <div class="yellow-highlight dev-yel">
       </div>
+      <!-- Research Info -->
+      <div class="grid center project-cont project-left">
+          <div class="col project-img-col">
+            <img src="./assets/images/research-pic.jpg" class="project-img" alt="">
+          </div>
+          <div class="col flex-2">
+            <h3 class="sub-header project-title">Computer Vision Research // <a href="./assets/conference-poster.pdf" target="_blank">Conference Poster</a></h3>
+            <h4></h4>
+            <p class="text">
+              This past Summer I performed research in the area of Computer Vision, specifically looking at calibrating highway monitoring cameras. Over the Summer I developed a calibration algorithm that could accurately estimate camera focal length and tilt angle. The algorithm iteratively estimated the focal length and tilt angle, each time performing a rectification of the image and comparing the lane widths found from our estimation against the regulated highway lane with (3.5m).
+            </p>
+          </div>
+        </div>
       <!-- ElleHacks Info -->
       <div class="grid center project-cont">
         <div class="col project-img-col">

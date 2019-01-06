@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400|Playfair+Display:700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600|Playfair+Display:700,900');
 
 body {
   background-color: #1A1A1A;
@@ -69,9 +69,10 @@ body {
 }
 .title-col {
   /* visibility: hidden; */
+  flex: 3;
 }
 .title-grid {
-  animation: title-grid-flux 4s alternate infinite;
+  animation: title-grid-flux 6s alternate infinite;
 }
 @keyframes title-grid-flux {
   0% {
@@ -100,13 +101,21 @@ body {
   }
 }
 
+.wrapper-z {
+  position: relative;
+  height: 2em;
+  transform: translateY(-2em);
+}
 .yellow-highlight-title {
+  position: relative;
   background-color: #FFDA00;
   height: 2em;
-  max-width: 12em;
+  width: 24em;
   margin: 0 auto;
-  transform: translateY(-2em);
+  /* transform: translateY(-2em); */
+  
   opacity: 0.8;
+  z-index: -1;
 }
 
 .yellow-highlight {
@@ -139,13 +148,17 @@ body {
   width: 15em;
 }
 .title {
-  animation: title-flux 4s alternate infinite;
+  animation: title-flux 6s alternate infinite;
   color: white;
   text-align: center;
-  font-family: "Playfair Display", serif;
-  font-size: 4em;
-  font-weight: 900;
+  font-family: "Montserrat", serif;
+  font-size: 3.5em;
+  font-weight: 600;
   margin-bottom: 0;
+}
+.title-wrap {
+  position: relative;
+  z-index: 10;
 }
 
 .about-grid {
@@ -181,7 +194,7 @@ body {
   font-weight: 100;
   text-align: center;
   text-transform: uppercase;
-  animation: sub-header-flux 4s alternate infinite;
+  animation: sub-header-flux 6s alternate infinite;
 }
 .sub-header {
   font-family: "Montserrat", sans-serif;
@@ -274,6 +287,14 @@ body {
   }
   .title-grid > .col > .grid > .col {
     margin-top: 50px;
+  }
+  .title {
+    font-size: 2.5em;
+  }
+  .yellow-highlight-title {
+    width: 20em;
+    height: 1em;
+    transform: translateY(0.5em);
   }
   .about-grid {
     height: auto;
