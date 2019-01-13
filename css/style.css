@@ -200,7 +200,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   color: #E6E6E6;
-  font-weight: 100;
+  font-weight: 300;
   text-align: center;
   text-transform: uppercase;
   animation: sub-header-flux 6s alternate infinite;
@@ -246,7 +246,7 @@ body {
   text-transform: lowercase;
 }
 .text {
-  font-weight: 300;
+  font-weight: 400;
 }
 .heading {
   font-family: "Montserrat", serif;
