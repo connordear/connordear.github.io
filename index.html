@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1" />
   <title>Connor Dear</title>
-  <!-- <script src="./javascript/jquery-3.2.1.min.js"></script> -->
+  <script src="./javascript/jquery-3.2.1.min.js"></script>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/animations.css">
   <link rel="icon" href="./assets/icons/icon.ico" type="image/gif" sizes="16x16">
@@ -24,20 +24,20 @@
   <div class="nav-bar">
     <div class="nav-grid">
       <div>
-        <a href="#"><img class="nav-img" src="./assets/icons/logo.png" alt=""></a>
+        <a href="#top"><img class="nav-img" src="./assets/icons/logo.png" alt=""></a>
       </div>
       <div>
         <a class="nav-link" href="#about"><h4 class="nav-title">ABOUT ME</h4></a>
       </div>
       <div>
-        <a class="nav-link" href="#dev"><h4 class="nav-title">DEVELOPMENT</h4></a>
+        <a class="nav-link" href="#dev"><h4 class="nav-title">PROJECTS</h4></a>
       </div>
-      <div>
+      <!-- <div>
         <a class="nav-link" href="#design"><h4 class="nav-title">DESIGN</h4></a>
       </div>
       <div>
         <a class="nav-link" href="#eng"><h4 class="nav-title">ENGINEERING</h4></a>
-      </div>
+      </div> -->
       <div>
         <a class="nav-link" href="#contact"><h4 class="nav-title">CONTACT ME</h4></a>
       </div>
@@ -46,7 +46,7 @@
 </header>
 <body>
   <!-- Title Section -->
-  <div class="grid center full-screen title-grid">
+  <div class="grid center full-screen title-grid" id="top">
     <div class="col">
       <div class="grid center">
         <div class="col">
@@ -89,7 +89,7 @@
     </div>
   </div>
   <!-- About Section -->
-  <div class="grid full-screen center about-grid"  id="about">
+  <div class="grid full-screen center about-grid" id="about">
     <div class="col">
       <div class="grid center">
         <div class="col center">
@@ -97,9 +97,12 @@
         </div>
         <div class="col right-text">
           <h2 class="heading">About Me</h2>
-          <div class="yellow-highlight about-yel">
+          <div class="wrapper-z" id="about-wrap">
+            <div class="yellow-highlight about-yel">
 
+            </div>
           </div>
+          
           <p class="about-text">
             Connor currently resides in Toronto, Canada, working on a Software Engineering degree at the Lassonde School of Engineering.
             <br><br> Connor spends his free time completing freelance design/development jobs, meeting new people, hiking into canadian wilderness, and hunting down the best coffee shops in the city.
@@ -111,8 +114,11 @@
   <!-- Projects Section -->
   <div class="grid center projects-section" id="dev">
     <div class="col">
-      <h2 class="heading">Development</h2>
-      <div class="yellow-highlight dev-yel">
+      <h2 class="heading">Projects</h2>
+      <div class="wrapper-z" id="about-wrap">
+        <div class="yellow-highlight projects-yel">
+
+        </div>
       </div>
       <!-- Research Info -->
       <div class="grid center project-cont project-left">
@@ -164,8 +170,8 @@
         </div>
       </div>
       <!-- Design -->
-      <h2 class="heading heading-space" id="design">Design</h2>
-      <div class="yellow-highlight design-yel"></div>
+      <!-- <h2 class="heading heading-space" id="design">Design</h2>
+      <div class="yellow-highlight design-yel"></div> -->
       <div class="grid center project-cont project-left">
         <div class="col project-img-col">
           <img src="./assets/images/pidaq-pic.jpg" class="project-img" alt="">
@@ -177,8 +183,8 @@
         </div>
       </div>
       <!-- Engineering -->
-      <h2 class="heading heading-space" id="eng">Engineering</h2>
-      <div class="yellow-highlight eng-yel"></div>
+      <!-- <h2 class="heading heading-space" id="eng">Engineering</h2>
+      <div class="yellow-highlight eng-yel"></div> -->
       <div class="grid center project-cont">
         <div class="col project-img-col">
           <img src="./assets/images/mag-pic.jpg" class="project-img" alt="">
@@ -195,7 +201,11 @@
   <div class="grid center contact-grid" id="contact">
     <div class="col">
       <h2 class="heading">Contact Me</h2>
-      <div class="yellow-highlight contact-yel"></div>
+      <div class="wrapper-z" id="about-wrap">
+        <div class="yellow-highlight contact-yel">
+
+        </div>
+      </div>
       <div class="grid media-grid">
         <div class="col">
           <a href="mailto:connordear@gmail.com"><img class="media-img" src="./assets/icons/mail-icon.png" alt=""></a>
@@ -212,9 +222,9 @@
       </div>
     </div>
   </div>
-  <!-- <script type="text/javascript" src="./javascript/script.js"></script> -->
+  <script type="text/javascript" src="./javascript/script.js"></script>
 </body>
-<footer class="footer-style">Coded by Connor, last update December 26th 2017.</footer>
+<footer class="footer-style">Coded by Connor, last update January 13th 2019</footer>
 
 
 

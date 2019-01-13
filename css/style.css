@@ -106,25 +106,30 @@ body {
   height: 2em;
   transform: translateY(-2em);
 }
+#about-wrap {
+  transform: translateY(-2.5em);
+}
 .yellow-highlight-title {
   position: relative;
   background-color: #FFDA00;
   height: 2em;
   width: 24em;
   margin: 0 auto;
-  /* transform: translateY(-2em); */
-  
   opacity: 0.8;
   z-index: -1;
 }
 
 .yellow-highlight {
+  position: relative;
   background-color: #FFDA00;
   height: 1em;
   width: 0;
   margin: 0 auto;
-  transform: translateY(-2.5em);
   opacity: 0.8;
+  z-index: -1;
+}
+.projects-yel {
+  width: 9em; 
 }
 .design-yel {
   width: 8em;
@@ -140,12 +145,14 @@ body {
 }
 .about-yel {
   width: 11em;
+  opacity: 0.6;
 }
 .full-screen {
   height: 100vh;
 }
 .contact-yel {
-  width: 15em;
+  width: 13em;
+  opacity: 0.6;
 }
 .title {
   animation: title-flux 6s alternate infinite;
@@ -170,7 +177,9 @@ body {
   border-radius: 100%;
   display: block;
   margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.5s;
+  
 }
 .about-grid > .col > .grid > .right-text > .heading {
   color: white;
@@ -211,7 +220,7 @@ body {
   padding-top: 50px;
 }
 .project-cont {
-  max-width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 20px;
@@ -240,12 +249,13 @@ body {
   font-weight: 300;
 }
 .heading {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
   font-size: 2em;
-  text-transform: uppercase;
   text-align: center;
   color: black;
+  position: relative;
+  z-index: 10;
 }
 .heading-space {
   padding-top: 60px;
