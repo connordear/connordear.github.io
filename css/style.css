@@ -109,6 +109,33 @@ body {
 #about-wrap {
   transform: translateY(-2.5em);
 }
+.button {
+  display: inline-flex;
+  max-width: 100px;
+  padding: 15px;
+  background-color: #a38d0a;
+  color: #FFFFFF;
+  border-radius:4px;
+  transition: 0.2s;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #FFDA00;
+  transition: 0.2s;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+.about-bottom {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
 .yellow-highlight-title {
   position: relative;
   background-color: #FFDA00;
