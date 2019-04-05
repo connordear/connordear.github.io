@@ -214,6 +214,7 @@ a.button {
 .about-grid {
   /* transform: translateX(-9999px); */
   position: relative;
+  min-height: 890px;
 }
 .about-img {
   width: 50%;
@@ -381,7 +382,6 @@ a.button {
     transform: translateY(0.5em);
   }
   .about-grid {
-    height: auto;
     padding-top: 50px;
   }
   .project-cont.project-left > .project-img-col {
@@ -398,9 +398,6 @@ a.button {
   }
   .media-grid > .col {
     margin: 10px;
-  }
-  .down-arrow {
-    visibility: hidden;
   }
 }
 @media (max-width: 800px) {
