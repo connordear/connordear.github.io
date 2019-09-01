@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,600|Playfair+Display:700,900');
 
 body {
-  background-color: #1A1A1A;
+  background-color: #FFFFFF;
   color: black;
   font-size: 14pt;
   font-family: "Montserrat", sans-serif;
-  color: #E6E6E6;
   padding: 0;
   margin: 0;
 }
@@ -72,11 +71,11 @@ body {
   flex: 3;
 }
 .title-grid {
-  animation: title-grid-flux 6s alternate infinite;
+  /* animation: title-grid-flux 6s alternate infinite;
   -webkit-animation: title-grid-flux 6s alternate infinite;
   -moz-animation: title-grid-flux 6s alternate infinite;
   -ms-animation: title-grid-flux 6s alternate infinite;
-  -o-animation: title-grid-flux 6s alternate infinite;
+  -o-animation: title-grid-flux 6s alternate infinite; */
 }
 @keyframes title-grid-flux {
   0% {
@@ -117,7 +116,7 @@ body {
   display: inline-flex;
   max-width: 100px;
   padding: 15px;
-  background-color: #a38d0a;
+  background-color: #FFDA00;
   color: #FFFFFF;
   border-radius:4px;
   transition: 0.2s;
@@ -129,7 +128,7 @@ body {
 }
 
 .button:hover {
-  background-color: #FFDA00;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: 0.2s;
   -moz-transition:  0.2s;
   -webkit-transition: 0.2s;
@@ -194,12 +193,7 @@ a.button {
   opacity: 0.6;
 }
 .title {
-  animation: title-flux 6s alternate infinite;
-  -webkit-animation: title-flux 6s alternate infinite;
-  -moz-animation: title-flux 6s alternate infinite;
-  -ms-animation: title-flux 6s alternate infinite;
-  -o-animation: title-flux 6s alternate infinite;
-  color: white;
+  color: black;
   text-align: center;
   font-family: "Montserrat", serif;
   font-size: 3.5em;
@@ -229,10 +223,10 @@ a.button {
   -ms-transition: 0.5s;
 }
 .about-grid > .col > .grid > .right-text > .heading {
-  color: white;
+  color: black;
 }
 .contact-grid > .col > .heading {
-  color: white;
+  color: black;
 }
 .about-img:hover {
   border-radius: 0;
@@ -246,27 +240,22 @@ a.button {
   margin: 40px;
   margin-top: 10px;
   font-weight: 100;
+  color: black;
 }
 .sub-header-title {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
-  color: #E6E6E6;
+  color: rgb(147, 147, 147);
   font-weight: 300;
   text-align: center;
-  text-transform: uppercase;
-  animation: sub-header-flux 6s alternate infinite;
-  -webkit-animation: sub-header-flux 6s alternate infinite;
-  -moz-animation: sub-header-flux 6s alternate infinite;
-  -ms-animation: sub-header-flux 6s alternate infinite;
-  -o-animation: sub-header-flux 6s alternate infinite;
 }
 .sub-header {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
-  color: #E6E6E6;
+  color: rgb(147, 147, 147);
   font-weight: 100;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .projects-section {
@@ -313,7 +302,8 @@ a.button {
   text-transform: lowercase;
 }
 .text {
-  font-weight: 400;
+  font-weight: 200;
+  letter-spacing: 0.25px;
 }
 .heading {
   font-family: "Montserrat", serif;
@@ -343,22 +333,22 @@ a.button {
   display: block;
   margin: 0 auto;
   padding: 8px;
-  opacity: 0.5;
-  transition: 0.5s;
+  transition: 0.25s;
+  background-color: black
 }
 .media-img:hover {
-  opacity: 1;
-  padding: 7px;
-  border: 1px solid #FFDA00;
-  border-radius: 100%;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
+  /* padding: 7px; */
+  /* border: 1px solid #FFDA00; */
+  background-color: #FFDA00;
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  -ms-transition: 0.25s;
 }
 .footer-style {
   text-align: center;
+  font-weight: 200;
   margin: 10px;
 }
 @media (max-width: 550px) {
@@ -366,9 +356,9 @@ a.button {
     flex-direction: column;
     transition: 0.5s;
     -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
   }
   .title-grid > .col > .grid > .col {
     margin-top: 50px;
