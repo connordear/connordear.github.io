@@ -10,3 +10,19 @@ $('a[href^="#"]').on('click', function(event) {
     }
 
 });
+
+$(document).ready(function() {
+    $('.title').addClass('show-highlight')
+})
+
+$(window).scroll(function() {
+    $('.yellow-highlight').each(function (i, el) {
+        var heightFromTop = $(el).offset().top,
+        heightOfTarget = $(el).outerHeight(),
+        windowHeight = $(window).height(),
+        currentDistanceScrolled = $(document).scrollTop();
+        if (currentDistanceScrolled > (heightFromTop+heightOfTarget-windowHeight + 200)){
+            $(el).addClass('show-highlight')
+        }
+    })
+ });

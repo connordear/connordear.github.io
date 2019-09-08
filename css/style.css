@@ -53,7 +53,6 @@ body {
 }
 .grid {
   display: flex;
-  transition: 0.5s;
 }
 .col {
   flex: 1;
@@ -70,10 +69,6 @@ body {
   width: 100vw;
   height: 100vh;
 }
-.title-col {
-  /* visibility: hidden; */
-  flex: 3;
-}
 
 .button {
   display: inline-flex;
@@ -82,22 +77,22 @@ body {
   background-color: #FFDA00;
   color: black;
   border-radius:4px;
-  transition: 0.15s;
-  -moz-transition: 0.15s;
-  -webkit-transition: 0.15s;
-  -o-transition: 0.15s;
-  -ms-transition: 0.15s;
+  transition: background-color 0.15s;
+  -moz-transition: background-color 0.15s;
+  -webkit-transition: background-color 0.15s;
+  -o-transition: background-color 0.15s;
+  -ms-transition: background-color 0.15s;
   margin: 10px;
 }
 
 .button:hover {
   background-color: black;
   color: white;
-  transition: 0.15s;
-  -moz-transition:  0.15s;
-  -webkit-transition: 0.15s;
-  -o-transition: 0.15s;
-  -ms-transition: 0.15s;
+  transition: background-color 0.15s;
+  -moz-transition: background-color 0.15s;
+  -webkit-transition: background-color 0.15s;
+  -o-transition: background-color 0.15s;
+  -ms-transition: background-color 0.15s;
 }
 
 a.button {
@@ -130,10 +125,19 @@ a.button {
   padding-left: 10px;
   padding-right: 10px;
   background-image: linear-gradient(90deg,transparent 50%,#ffda00 0);
-  background-position: -100% 110%;
+  background-position: 0% 110%;
   background-size: auto;
   background-repeat: repeat-x;
   background-size: 200% 52%;
+}
+
+.show-highlight {
+  background-position: -100% 110%;
+  transition: background-position 1s;
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  -o-transition: background-position 1s;
+  -ms-transition: background-position 1s;
 }
 
 .title {
@@ -160,20 +164,20 @@ a.button {
   display: block;
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
+  transition: border-radius 0.5s;
+  -webkit-transition: border-radius 0.5s;
+  -moz-transition: border-radius 0.5s;
+  -o-transition: border-radius 0.5s;
+  -ms-transition: border-radius 0.5s;
 }
 
 .about-img:hover {
   border-radius: 0;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
+  transition: border-radius 0.5s;
+  -webkit-transition: border-radius 0.5s;
+  -moz-transition: border-radius 0.5s;
+  -o-transition: border-radius 0.5s;
+  -ms-transition: border-radius 0.5s;
 }
 .about-text {
   margin: 40px;
@@ -200,30 +204,30 @@ a.button {
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 20px;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
+  transition: box-shadow 0.5s;
+  -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+  -ms-transition: box-shadow 0.5s;
 }
 .project-cont:hover {
-  /* Alright this box shadow is from w3 but they nailed it.*/
+  /* This box shadow is from w3 */
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
+  transition: box-shadow 0.5s;
+  -webkit-transition: box-shadow 0.5s;
+  -moz-transition: box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+  -ms-transition: box-shadow 0.5s;
 }
 .project-img {
   width: 80%;
   display: block;
   margin: 0 auto;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
 }
 .project-title {
   text-align: left;
@@ -252,18 +256,18 @@ a.button {
   display: block;
   margin: 0 auto;
   padding: 8px;
-  transition: 0.25s;
+  transition: background-color 0.25s;
   background-color: black
 }
 .media-img:hover {
   /* padding: 7px; */
   /* border: 1px solid #FFDA00; */
   background-color: #FFDA00;
-  transition: 0.25s;
-  -webkit-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -o-transition: 0.25s;
-  -ms-transition: 0.25s;
+  transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  -ms-transition: background-color 0.25s;
 }
 .footer-style {
   text-align: center;
@@ -273,16 +277,16 @@ a.button {
 @media (max-width: 630px) {
   .grid {
     flex-direction: column;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    -ms-transition: 0.5s;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
   }
 
   .title {
     margin-top: 200px;
-    font-size: 1.5em !important;
+    font-size: 2.5em;
   }
   .sub-header {
     font-size: 0.75em;
@@ -298,11 +302,9 @@ a.button {
 }
 @media (max-width: 800px) {
   .about-img {
-    width: 80%;
+    /* width: 80%; */
   }
-  .title {
-    font-size: 2.5em;
-  }
+
   .media-grid {
     width: 80%;
   }
@@ -311,36 +313,24 @@ a.button {
   .nav-bar {
     visibility: hidden;
   }
-  .title {
-    font-size: 2.5em;
-  }
+  
   #dev .grid {
     flex-direction: column;
     margin:50px;
     margin-left: 25px;
     margin-right: 25px;
-    transition: 0s;
-    -webkit-transition: 0s;
-    -moz-transition: 0s;
-    -o-transition: 0s;
-    -ms-transition: 0s;
   }
   .project-img-col {
     flex: 2;
-    width: 100%;
-    transition: 0.5s;
-    -webkit-transition: 0s;
-  -moz-transition: 0s;
-  -o-transition: 0s;
-  -ms-transition: 0s;
+    width: 80%;
   }
   .project-cont:hover {
     box-shadow: none;
-    transition: 0s;
+    /* transition: 0s;
     -webkit-transition: 0s;
     -moz-transition: 0s;
     -o-transition: 0s;
-    -ms-transition: 0s;
+    -ms-transition: 0s; */
   }
   .project-cont.project-left > .project-img-col {
     order: 0;
