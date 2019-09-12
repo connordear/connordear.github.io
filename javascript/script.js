@@ -1,5 +1,5 @@
 $('a[href^="#"]').on('click', function(event) {
-    console.log("Clicked!");
+    // console.log("Clicked!");
     var target = $(this.getAttribute('href'));
 
     if( target.length ) {
@@ -11,10 +11,13 @@ $('a[href^="#"]').on('click', function(event) {
 
 });
 
+// Show the title highlight when page loads
 $(document).ready(function() {
     $('.title').addClass('show-highlight')
 })
 
+// Show heading highlights whenever the user scrolls to the specific heading
+// Seems heavy on resources... is there a better way to do this?
 $(window).scroll(function() {
     $('.yellow-highlight').each(function (i, el) {
         var heightFromTop = $(el).offset().top,
