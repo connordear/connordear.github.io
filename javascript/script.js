@@ -26,6 +26,19 @@ $(window).scroll(function() {
         currentDistanceScrolled = $(document).scrollTop();
         if (currentDistanceScrolled > (heightFromTop+heightOfTarget-windowHeight + 200)){
             $(el).addClass('show-highlight')
+        } else {
+            $(el).removeClass('show-highlight')
+        }
+    })
+    $('.about-img').each(function (i, el) {
+        var heightFromTop = $(el).offset().top,
+        heightOfTarget = $(el).outerHeight(),
+        windowHeight = $(window).height(),
+        currentDistanceScrolled = $(document).scrollTop();
+        if (currentDistanceScrolled > (heightFromTop+heightOfTarget-windowHeight + 200)){
+            $(el).addClass('square-corners')
+        } else {
+            $(el).removeClass('square-corners')
         }
     })
  });

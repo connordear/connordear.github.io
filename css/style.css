@@ -129,6 +129,11 @@ a.button {
   background-size: auto;
   background-repeat: repeat-x;
   background-size: 200% 52%;
+  transition: background-position 0.5s;
+  -webkit-transition: background-position 0.5s;
+  -moz-transition: background-position 0.5s;
+  -o-transition: background-position 0.5s;
+  -ms-transition: background-position 0.5s;
 }
 
 .show-highlight {
@@ -171,14 +176,17 @@ a.button {
   -ms-transition: border-radius 0.5s;
 }
 
-.about-img:hover {
+.square-corners {
+  border-radius: 0;
+}
+/* .about-img:hover {
   border-radius: 0;
   transition: border-radius 0.5s;
   -webkit-transition: border-radius 0.5s;
   -moz-transition: border-radius 0.5s;
   -o-transition: border-radius 0.5s;
   -ms-transition: border-radius 0.5s;
-}
+} */
 .about-text {
   margin: 40px;
   margin-top: 10px;
