@@ -164,16 +164,11 @@ a.button {
   min-height: 890px;
 }
 .about-img {
-  width: 50%;
-  border-radius: 100%;
+  width: 60%;
   display: block;
   margin: 0 auto;
+  margin-top: 100px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: border-radius 0.5s;
-  -webkit-transition: border-radius 0.5s;
-  -moz-transition: border-radius 0.5s;
-  -o-transition: border-radius 0.5s;
-  -ms-transition: border-radius 0.5s;
 }
 
 .square-corners {
