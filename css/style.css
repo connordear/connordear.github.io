@@ -77,22 +77,22 @@ body {
   background-color: #FFDA00;
   color: black;
   border-radius:4px;
-  transition: background-color 0.15s;
   -moz-transition: background-color 0.15s;
   -webkit-transition: background-color 0.15s;
   -o-transition: background-color 0.15s;
   -ms-transition: background-color 0.15s;
+  transition: background-color 0.15s;
   margin: 10px;
 }
 
 .button:hover {
   background-color: black;
   color: white;
-  transition: background-color 0.15s;
   -moz-transition: background-color 0.15s;
   -webkit-transition: background-color 0.15s;
   -o-transition: background-color 0.15s;
   -ms-transition: background-color 0.15s;
+  transition: background-color 0.15s;
 }
 
 a.button {
@@ -129,20 +129,20 @@ a.button {
   background-size: auto;
   background-repeat: repeat-x;
   background-size: 200% 52%;
-  transition: background-position 0.5s;
-  -webkit-transition: background-position 0.5s;
   -moz-transition: background-position 0.5s;
+  -webkit-transition: background-position 0.5s;
   -o-transition: background-position 0.5s;
   -ms-transition: background-position 0.5s;
+  transition: background-position 0.5s;
 }
 
 .show-highlight {
   background-position: -100% 110%;
-  transition: background-position 1s;
-  -webkit-transition: background-position 1s;
   -moz-transition: background-position 1s;
+  -webkit-transition: background-position 1s;
   -o-transition: background-position 1s;
   -ms-transition: background-position 1s;
+  transition: background-position 1s;
 }
 
 .title {
@@ -207,31 +207,31 @@ a.button {
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 20px;
-  transition: box-shadow 0.5s;
-  -webkit-transition: box-shadow 0.5s;
   -moz-transition: box-shadow 0.5s;
+  -webkit-transition: box-shadow 0.5s;
   -o-transition: box-shadow 0.5s;
   -ms-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
 }
 .project-cont:hover {
   /* This box shadow is from w3 */
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: box-shadow 0.5s;
-  -webkit-transition: box-shadow 0.5s;
-  -moz-transition: box-shadow 0.5s;
-  -o-transition: box-shadow 0.5s;
-  -ms-transition: box-shadow 0.5s;
+   -moz-transition: box-shadow 0.5s;
+   -webkit-transition: box-shadow 0.5s;
+   -o-transition: box-shadow 0.5s;
+   -ms-transition: box-shadow 0.5s;
+   transition: box-shadow 0.5s;
 }
 .project-img {
   width: 80%;
   display: block;
   margin: 0 auto;
   
-  transition: background-color 0.5s;
-  -webkit-transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 .project-title {
   text-align: left;
@@ -267,11 +267,11 @@ a.button {
   /* padding: 7px; */
   /* border: 1px solid #FFDA00; */
   background-color: #FFDA00;
-  transition: background-color 0.25s;
-  -webkit-transition: background-color 0.25s;
   -moz-transition: background-color 0.25s;
+  -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   -ms-transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 .footer-style {
   text-align: center;
@@ -281,11 +281,11 @@ a.button {
 @media (max-width: 630px) {
   .grid {
     flex-direction: column;
-    transition: background-color 0.5s;
-    -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
     -ms-transition: background-color 0.5s;
+    transition: background-color 0.5s;
   }
 
   .title {
