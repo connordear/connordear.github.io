@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Playfair+Display:700,900');
 
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   background-color: #FFFFFF;
   color: black;
@@ -7,6 +12,7 @@ body {
   font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
+  height: 100%;
 }
 /* Hey! Thanks for checking out my code, I opted to make my own grid
   system cause I heard you could do it in a few lines of code with flexbox.
@@ -198,7 +204,86 @@ a.button {
   text-align: center;
 }
 
-.projects-section {
+
+.grid-container {
+  margin: auto;
+  max-width: 800px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.grid-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.grid-item:hover > img {
+  opacity: 0.3;
+  transition: 0.2s;
+}
+
+.grid-item:hover > .project-title {
+  display: inline-block;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.project-title {
+  display:none;
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.5em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-img:hover {
+  opacity: 0.3;
+}
+
+.modal-bg {
+  display: none;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right:0;
+  background-color: #000;
+  opacity: 0.8;
+  z-index: 50;
+}
+
+.modal-data {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  width: 90%;
+  max-width: 700px;
+  height: 600px;
+  left: 0;
+  right: 0;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+/* .projects-section {
   background-color: white;
   color: #1A1A1A;
   padding-top: 50px;
@@ -216,13 +301,13 @@ a.button {
 }
 .project-cont:hover {
   /* This box shadow is from w3 */
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    -moz-transition: box-shadow 0.5s;
    -webkit-transition: box-shadow 0.5s;
    -o-transition: box-shadow 0.5s;
    -ms-transition: box-shadow 0.5s;
    transition: box-shadow 0.5s;
-}
+} 
 .project-img {
   width: 80%;
   display: block;
@@ -238,7 +323,7 @@ a.button {
   text-align: left;
   color: #1A1A1A;
   font-weight: 600;
-}
+} */
 
 .text {
   font-weight: 200;
@@ -280,6 +365,14 @@ a.button {
   margin: 10px;
 }
 @media (max-width: 630px) {
+  .grid-container {
+    margin: 0 auto;
+    margin-left: 20px auto;
+    margin-right: 20px auto;
+    grid-template-columns: auto;
+    max-width: 300px;
+  }
+
   .grid {
     flex-direction: column;
     -moz-transition: background-color 0.5s;
@@ -306,9 +399,6 @@ a.button {
   }
 }
 @media (max-width: 800px) {
-  .about-img {
-    /* width: 80%; */
-  }
 
   .media-grid {
     width: 80%;
