@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600|Playfair+Display:700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Playfair+Display:700,900');
 
 body {
   background-color: #FFFFFF;
@@ -150,9 +150,10 @@ a.button {
   text-align: center;
   font-family: "Montserrat", serif;
   font-size: 3.5em;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 0;
 }
+
 .title-wrapper {
   position: relative;
   z-index: 10;
