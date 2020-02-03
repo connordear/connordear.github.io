@@ -1,3 +1,4 @@
+// Scrollto stuff
 $('a[href^="#"]').on('click', function (event) {
     // console.log("Clicked!");
     var target = $(this.getAttribute('href'));
@@ -16,6 +17,7 @@ $(document).ready(function () {
     $('.title').addClass('show-highlight')
 })
 
+// Highlight Scrolls
 // Show heading highlights whenever the user scrolls to the specific heading
 // Seems heavy on resources... is there a better way to do this?
 $(window).scroll(function () {
@@ -30,30 +32,24 @@ $(window).scroll(function () {
             $(el).removeClass('show-highlight')
         }
     })
-    // $('.about-img').each(function (i, el) {
-    //     var heightFromTop = $(el).offset().top,
-    //     heightOfTarget = $(el).outerHeight(),
-    //     windowHeight = $(window).height(),
-    //     currentDistanceScrolled = $(document).scrollTop();
-    //     if (currentDistanceScrolled > (heightFromTop+heightOfTarget-windowHeight + 200)){
-    //         $(el).addClass('square-corners')
-    //     } else {
-    //         $(el).removeClass('square-corners')
-    //     }
-    // })
 });
 
-
-
+// Display Modal on clicks
 $('.grid-item').each(function (i, el) {
     $(el).on('click', function (event) {
-        displayModal(i);
+        displayModal(this.id);
     })
 })
 
+// Hide Modals when clicking outside
 $('.modal-bg').on('click', function (event) {
     hideModal();
 })
+
+// Hide Modal when clicking close button
+$('.modal-close-btn').on('click', function(event) {
+    hideModal();
+});
 
 function displayModal(data) {
     $('.modal-bg').css("display", "block");
@@ -66,7 +62,7 @@ function hideModal() {
     $('.modal-bg').css("display", "none");
     $('.modal-data').css("display", "none")
     $('.modal-data')[0].classList.remove('fadeIn');
-    $('.modal-data').empty();
+    $(".modal-data > *:not('.modal-close-btn')").remove();
 }
 
 $(document).keyup(function (e) {
@@ -75,32 +71,42 @@ $(document).keyup(function (e) {
     }
 })
 
-var research = `<h3>
+var researchText = `
+                <h3>
                     Computer Vision Research &nbsp; // &nbsp;
                     <a href="./assets/conference-poster.pdf" target="_blank">Conference Poster</a>
                 </h3>
                 <p class="text">
                     In the Summer of 2018 I performed research in the area of Computer Vision, investigating new ways to calibrate highway monitoring cameras. I developed a calibration algorithm that could accurately estimate camera focal length and tilt angle using known lane-width dimensions and then iteratively estimating parameters. My research was awared 1st honourable mention at the LURA Research conference at the end of the Summer.
-                </p>`;
+                </p>
+                <img src="./assets/images/research-pic.jpg" alt="">
+                `;
 
-var uinvest = `<h3>
-                    uInvest - Queens Conference on Business & Technology &nbsp; // &nbsp;
+var uinvestText = `
+                <h3>
+                    uInvest - Wealth Management App &nbsp; // &nbsp;
                     <a href="https://morning-beach-13736.herokuapp.com/" target="_blank">Live Demo</a>
                 </h3>
                  <p class="text">
                     At the beginning of the Summer 2018, I was asked to join the winning team of QCBT. In the span of 2 weeks, we had to create a working prototype of the "Future of Wealth Management" application that the team had created while at the conference. We interviewed branch managers and current users of their platform to gather information on possible improvements, and created a live demo of the application to present to a panel of senior executives at BMO's headquarters in downtown Toronto. For this project I tried out the Ionic framework to get some more experience with the Angular system, using an Express server and MongoDB database in the backend.
-                </p>`;
+                </p>
+                <img src="./assets/images/uinvest-pic.jpg" alt="">
+                `;
 
-var ellehacks = `<h3>
+var ellehacksText = `
+                <h3>
                     ElleHacks &nbsp; // &nbsp; <a href="https://ellehacks.com/2018/index.html" >ellehacks.com</a>
                 </h3>
                 <p class="text">
                     ElleHacks is a women-only hackathon that takes place in the Lassonde School of Engineering. My friend Ramona Sar is the president of the WISE (Women in Science and Engineering) club at Lassonde and asked if I would be able to build the site
                     out for her! I think events like these are crucial to helping grow the diversity within the tech world, and worked with a designer (Leena Chanthyvong) to build out the site. This time around I decided to build my own grid system using pure HTML/CSS (using flexbox),
                     and was thrilled at how easy it was! This project taught me a lot about the impact that loading JS files can have on the load time for a site, and I was inspired to re-do my webpage with a similar custom grid system.
-                </p>`;
+                </p>
+                <img src="./assets/images/elle-hacks-pic.jpg" alt="">
+                `;
 
-var pillflower = `<h3>
+var pillflowerText = `
+                <h3>
                     Pillflower World &nbsp; // &nbsp;
                     <a href="https://appetize.io/app/k1p3azx2hb09waacwe843mgctw?device=ipadair&scale=50&orientation=portrait&osVersion=11.1">The App</a>
                 </h3>
@@ -112,11 +118,14 @@ var pillflower = `<h3>
                     developed her app using React-Native. It was developed specifically for iPad, and as a result
                     of the very tight timeline, it is not cross-compatible across devices. Still, it was a great
                     project to work on, and I had a learned a tonne along the way.
-                </p>`;
+                </p>
+                <img src="./assets/images/pillflower-pic.jpg" alt="">
+                `;
 
-var mag = `<h3>
+var magText = `
+            <h3>
                 Magnetorquer Winding Station &nbsp; // &nbsp;
-                <a href="https://cad.onshape.com/documents/632dfd44de458030aa2f17de/w/ac9f1e79fea28aa8dafa7ac3/e/e65fb08ea6260297d465aa07" >The Model (requires account)</a>
+                <a href="https://cad.onshape.com/documents/632dfd44de458030aa2f17de/w/ac9f1e79fea28aa8dafa7ac3/e/e65fb08ea6260297d465aa07" >The Model</a>
             </h3>
             <p class="text">
                 Having spent a lot of time in the rapid-prototyping lab at Lassonde, I've had the chance
@@ -124,9 +133,12 @@ var mag = `<h3>
                 Club at York was looking for a way to build custom Magnetorquers, essentially finely wrapped wire
                 around a metal core. The station uses a Raspberry Pi to drive two different stepper motors to guide
                 the wire along the core. It was constructed using 3D printed ABS and has an acryllic base.
-            </p>`;
+            </p>
+            <img src="./assets/images/mag-pic.jpg" alt="">
+            `;
 
-var pidaq = `<h3>
+var pidaqText = `
+            <h3>
                 PiDAQ &nbsp; // &nbsp; <a href="./assets/pidaq-designs.pdf" >Mockups</a>
             </h3>
             <p class="text">
@@ -134,9 +146,17 @@ var pidaq = `<h3>
                 interface where users can input settings that they wish to send to certain pins, or configure other
                 pins to read certain types of data. We are in the development process currently using React with a
                 Node.js server to read/write to the actual hardware.
-            </p>`;
+            </p>
+            <img src="./assets/images/pidaq-pic.jpg" alt="">
+            `;
 
 
 
-
-var projects = [research, uinvest, ellehacks, pillflower, mag, pidaq]
+var projects = {
+    research: researchText,
+    uinvest: uinvestText,
+    ellehacks: ellehacksText,
+    pillflower: pillflowerText,
+    mag: magText,
+    pidaq: pidaqText
+};

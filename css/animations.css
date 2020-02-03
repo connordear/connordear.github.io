@@ -400,8 +400,8 @@ fadeIn
 	animation-name: fadeIn;
 	-webkit-animation-name: fadeIn;
 
-	animation-duration: 0.5s;
-	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.25s;
+	-webkit-animation-duration: 0.25s;
 
 	animation-timing-function: ease-in-out;
 	-webkit-animation-timing-function: ease-in-out;
@@ -414,9 +414,10 @@ fadeIn
 		transform: scale(0);
 		opacity: 0.0;
 	}
-	60% {
-		transform: scale(1.02);
-	}
+	/* 50% {
+		transform: scale(0.5);
+		opacity: 0.5
+	} */
 	/* 80% {
 		transform: scale(0.95);
 		opacity: 1;
