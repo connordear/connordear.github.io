@@ -71,6 +71,30 @@ $(document).keyup(function (e) {
     }
 })
 
+
+var currImgs = ['curr-img-1', 'curr-img-2', 'curr-img-3'];
+
+var currImgIdx = 0;
+var lastImgIdx = 0;
+showImg(currImgs[currImgIdx]);
+// Fade in
+setInterval(function() {
+    lastImgIdx = currImgIdx;
+    currImgIdx = (currImgIdx + 1) % 3;
+    showImg(currImgs[currImgIdx]);
+    hideImg(currImgs[lastImgIdx]);
+}, 4000);
+
+
+function hideImg(imgSelector) {
+    $('#' + imgSelector).css('opacity','0');
+}
+
+function showImg(imgSelector) {
+    $('#' + imgSelector).css('opacity', '1');
+}
+
+
 var researchText = `
                 <h3>
                     Computer Vision Research &nbsp; // &nbsp;
