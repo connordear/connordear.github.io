@@ -1,18 +1,15 @@
 # connordear.github.io
-my webpage documents
 
-<h1>In Progress</h1>
+# Personal Webpage & Portfolio
 
-Hey! Welcome to my webpage docs.
+[Live Site](https://connordear.ca)
 
-I made my webpage based off of a grid system using 2 very simple CSS classes:
+This has been a work in progress for some time, and over time sections have come and gone. It's been a great place for me to try out funky things as I have built up my knowledge of basic HTML/CSS/JS, and I have tried to code as much of it from scratch as possible.
 
-.grid {
-  display: flex;
-}
+Recent improvements include the addition of modals for the projects section and a crossfade slideshow for a current projects section.
 
-.col {
-  flex: 1;
-}
+Future Goals for the site:
 
-More to come!
+* Add dark mode
+* Include a link to my current top playlist from spotify
+* Include currently reading/attempting to cook section
