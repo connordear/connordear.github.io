@@ -1,5 +1,3 @@
-# connordear.github.io
-
 # Personal Webpage & Portfolio
 
 [Live Site](https://connordear.ca)
