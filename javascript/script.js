@@ -1,100 +1,156 @@
 // Scrollto stuff
-$('a[href^="#"]').on('click', function (event) {
-    // console.log("Clicked!");
-    var target = $(this.getAttribute('href'));
+$('a[href^="#"]').on("click", function (event) {
+  // console.log("Clicked!");
+  var target = $(this.getAttribute("href"));
 
-    if (target.length) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-
+  if (target.length) {
+    event.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: target.offset().top,
+      },
+      1000
+    );
+  }
 });
 
 // Show the title highlight when page loads
 $(document).ready(function () {
-    $('.title').addClass('show-highlight')
-})
+  $(".title").addClass("show-highlight");
+});
 
 // Highlight Scrolls
 // Show heading highlights whenever the user scrolls to the specific heading
 // Seems heavy on resources... is there a better way to do this?
 $(window).scroll(function () {
-    $('.yellow-highlight').each(function (i, el) {
-        var heightFromTop = $(el).offset().top,
-            heightOfTarget = $(el).outerHeight(),
-            windowHeight = $(window).height(),
-            currentDistanceScrolled = $(document).scrollTop();
-        if (currentDistanceScrolled > (heightFromTop + heightOfTarget - windowHeight + 200)) {
-            $(el).addClass('show-highlight')
-        } else {
-            $(el).removeClass('show-highlight')
-        }
-    })
+  $(".yellow-highlight").each(function (i, el) {
+    var heightFromTop = $(el).offset().top,
+      heightOfTarget = $(el).outerHeight(),
+      windowHeight = $(window).height(),
+      currentDistanceScrolled = $(document).scrollTop();
+    if (
+      currentDistanceScrolled >
+      heightFromTop + heightOfTarget - windowHeight + 200
+    ) {
+      $(el).addClass("show-highlight");
+    } else {
+      $(el).removeClass("show-highlight");
+    }
+  });
 });
 
 // Display Modal on clicks
-$('.grid-item').each(function (i, el) {
-    $(el).on('click', function (event) {
-        displayModal(this.id);
-    })
-})
+$(".grid-item").each(function (i, el) {
+  $(el).on("click", function (event) {
+    displayModal(this.id);
+  });
+});
 
 // Hide Modals when clicking outside
-$('.modal-bg').on('click', function (event) {
-    hideModal();
-})
+$(".modal-bg").on("click", function (event) {
+  hideModal();
+});
 
 // Hide Modal when clicking close button
-$('.modal-close-btn').on('click', function(event) {
-    hideModal();
+$(".modal-close-btn").on("click", function (event) {
+  hideModal();
 });
 
 function displayModal(data) {
-    $('.modal-bg').css("display", "block");
-    $('.modal-data').css("display", "block");
-    $('.modal-data')[0].classList.add('fadeIn');
-    $('.modal-data').append(projects[data]);
+  $(".modal-bg").css("display", "block");
+  $(".modal-data").css("display", "block");
+  $(".modal-data")[0].classList.add("fadeIn");
+  $(".modal-data").append(projects[data]);
 }
 
 function hideModal() {
-    $('.modal-bg').css("display", "none");
-    $('.modal-data').css("display", "none")
-    $('.modal-data')[0].classList.remove('fadeIn');
-    $(".modal-data > *:not('.modal-close-btn')").remove();
+  $(".modal-bg").css("display", "none");
+  $(".modal-data").css("display", "none");
+  $(".modal-data")[0].classList.remove("fadeIn");
+  $(".modal-data > *:not('.modal-close-btn')").remove();
 }
 
 $(document).keyup(function (e) {
-    if (e.which == 27) {
-        hideModal();
-    }
-})
+  if (e.which == 27) {
+    hideModal();
+  }
+});
 
-
-var currImgs = ['curr-img-1', 'curr-img-2', 'curr-img-3'];
+var currImgs = ["curr-img-1", "curr-img-2", "curr-img-3"];
 
 var currImgIdx = 0;
 var lastImgIdx = 0;
 showImg(currImgs[currImgIdx]);
 // Fade in
-setInterval(function() {
-    lastImgIdx = currImgIdx;
-    currImgIdx = (currImgIdx + 1) % 3;
-    showImg(currImgs[currImgIdx]);
-    hideImg(currImgs[lastImgIdx]);
+setInterval(function () {
+  lastImgIdx = currImgIdx;
+  currImgIdx = (currImgIdx + 1) % 3;
+  showImg(currImgs[currImgIdx]);
+  hideImg(currImgs[lastImgIdx]);
 }, 4000);
 
-
 function hideImg(imgSelector) {
-    $('#' + imgSelector).css('opacity','0');
+  $("#" + imgSelector).css("opacity", "0");
 }
 
 function showImg(imgSelector) {
-    $('#' + imgSelector).css('opacity', '1');
+  $("#" + imgSelector).css("opacity", "1");
 }
 
-
+var spareText = `
+<h3>Capstone Project - Spare</h3>
+<div class="scroll-project-wrapper">
+    <div class="grid-container-2">
+      <div class="col center curr-img-cont">
+        <img
+          src="./assets/images/spare-mockup.png"
+          class="current-img"
+          id="curr-img-1"
+          alt=""
+        />
+        <img
+          src="./assets/images/spare-logo.png"
+          class="current-img"
+          id="curr-img-2"
+          alt=""
+        />
+        <img
+          src="./assets/images/spare-modal.png"
+          class="current-img"
+          id="curr-img-3"
+          alt=""
+        />
+      </div>
+      <div class="col right-text">
+        <p class="curr-text">
+          In my final year of university, I worked with 7 of my peers to
+          complete our capstone course. Our project automated the University's
+          course scheduling system - which right now is largely done manually.
+          Many of the existing course scheduling conflicts and issues student
+          face arise from this manual method, and we have carefully designed our
+          project to address these issues.
+          <br /><br />
+          Using an agile style of project management, we interviewed our users,
+          designed our product, and developed an MVP. Our development stack
+          consists of Angular in the frontend, an Express server for handling
+          requests, Firestore on Google Cloud Platform for data storage, and a
+          Flask python server to run our scheduler optimizer.
+          <br /><br />
+          Check out our final video below.
+        </p>
+        <div style="text-align: center">
+          <div class="embed-container">
+            <iframe
+              src="https://www.youtube.com/embed/-7qDpt6egNo"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+`;
 var researchText = `
                 <h3>
                     Computer Vision Research &nbsp; // &nbsp;
@@ -174,13 +230,12 @@ var pidaqText = `
             <img src="./assets/images/pidaq-pic.jpg" alt="">
             `;
 
-
-
 var projects = {
-    research: researchText,
-    uinvest: uinvestText,
-    ellehacks: ellehacksText,
-    pillflower: pillflowerText,
-    mag: magText,
-    pidaq: pidaqText
+  spare: spareText,
+  research: researchText,
+  uinvest: uinvestText,
+  ellehacks: ellehacksText,
+  pillflower: pillflowerText,
+  mag: magText,
+  pidaq: pidaqText,
 };
