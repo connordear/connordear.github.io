@@ -77,6 +77,7 @@ $(document).keyup(function (e) {
 });
 
 var currImgs = ["curr-img-1", "curr-img-2", "curr-img-3"];
+var capstoneImgs = ["curr-img-1", "curr-img-2", "curr-img-3"];
 
 var currImgIdx = 0;
 var lastImgIdx = 0;

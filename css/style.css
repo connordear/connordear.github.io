@@ -196,7 +196,7 @@ a.button {
 
 .curr-text {
   max-width: 700px;
-  font-weight: 200;
+  font-weight: 300;
 }
 .curr-img-cont {
   position: relative;
@@ -241,7 +241,7 @@ a.button {
 .about-text {
   margin: 40px;
   margin-top: 10px;
-  font-weight: 200;
+  font-weight: 300;
   color: black;
 }
 
@@ -377,7 +377,7 @@ a.button {
 }
 
 .text {
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0.25px;
 }
 
@@ -432,7 +432,7 @@ a.button {
 }
 .footer-style {
   text-align: center;
-  font-weight: 200;
+  font-weight: 300;
   margin: 10px;
 }
 @media (max-width: 630px) {
