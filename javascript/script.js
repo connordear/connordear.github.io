@@ -230,8 +230,20 @@ var pidaqText = `
             </p>
             <img src="./assets/images/pidaq-pic.jpg" alt="">
             `;
+var imiText = `
+            <h3>
+                imi &nbsp; // &nbsp; <a href="http://connordear.ca/imi" >Live Site</a>
+            </h3>
+            <p class="text">
+                imi came about as I started learning Japanese a few years ago.
+
+As a part of my studying, I would practice learning phrases and then break them down into the components to learn each of the words meanings. I had phrases in Japanese given to me from my friend Naoki, and then I would create the Romaji translation, and then try to break the phrase down further to get direct tranlsations of each of the other words.
+            </p>
+            <img src="./assets/images/imi.png" alt="">
+            `;
 
 var projects = {
+  imi: imiText,
   spare: spareText,
   research: researchText,
   uinvest: uinvestText,
